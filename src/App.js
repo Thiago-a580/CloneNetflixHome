@@ -59,6 +59,18 @@ export default () => {
     <MovieRow key={key} title={item.title} items={item.items}  />
     ))}
     </section>
+
+    <footer>
+      
+      Dados pegos na API do site Themoviedb.org<br/>
+      
+    </footer>
+
+      {movieList.length <= 0 &&
+    <div className="loading">
+      <img src ='https://c.tenor.com/Rfyx9OkRI38AAAAM/netflix-netflix-startup.gif' alt="Loading" />
+    </div>
+}
 </div>
   );
  }  
